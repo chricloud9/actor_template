@@ -47,7 +47,7 @@
       </div>
 
       <div class="jumbotron">
-        <div class="embed-responsive embed-responsive-16by9">
+        <div id="video1" class="embed-responsive embed-responsive-16by9">
           <iframe src="http://www.imdb.com/video/user/vi1113236505/imdb/embed?autoplay=false&width=650" width="650" height="365" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe>
           <!-- <iframe id="video1" width="650px" height="365" src="https://www.youtube.com/embed/9Jok5Wlk5tQ?autoplay=0"</iframe>http://www.imdb.com/video/user/vi1113236505/ -->
         </div>
@@ -55,6 +55,8 @@
         <!-- <h1>Charley Morgan</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-lg btn-success" href="http://getbootstrap.com/examples/jumbotron-narrow/#" role="button">Sign up today</a></p> -->
+        <!-- <div id="toggle_1" onclick="switch(1)"></div>
+        <div id="toggle_2" onclick="switch(0)"></div> -->
       </div>
 
       <div class="row marketing">
@@ -94,6 +96,20 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
-
+    <script>
+    console.log('hkasdl');
+    var frameSrc = document.getElementById("video1").childnodes[1].src;
+    var vid1 = "https://www.youtube.com/embed/9Jok5Wlk5tQ?autoplay=1";
+    var vid2 = "http://www.imdb.com/video/user/vi1113236505/imdb/embed?autoplay=false&width=650";
+    // var function switch(clip){
+    //   console.log("works");
+    //   if (clip == 1){
+    //     frameSrc=vid1;
+    //   }
+    //   else(){
+    //     frameSrc=vid2;
+    //   }
+    // };
+    </script>
 
 </body></html>
