@@ -1,13 +1,37 @@
-(function(app) {
-  app.AppComponent =
-    ng.core.Component({
-      selector: 'my-app',
-      template : '<body cz-shortcut-listen="true"> <div class="container"> <div class="header clearfix"> <nav> <ul class="nav nav-pills pull-right"> <li role="presentation" class="active"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">Home</a></li><li role="presentation"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">About</a></li><li role="presentation"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">Contact</a></li><li role="presentation"><a href="http://getbootstrap.com/examples/jumbotron-narrow/#">Photos</a></li></ul> </nav> <h3 class="text-muted">Charley Morgan</h3> </div><div class="jumbotron"> <div id="video1" class="embed-responsive embed-responsive-16by9"> <iframe src="http://www.imdb.com/video/user/vi1113236505/imdb/embed?autoplay=false&width=650" width="650" height="365" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="no" scrolling="no"></iframe> </div>',
-      styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css','.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css','.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css']
-    })
-    .Class({
-      constructor: function() {
-        console.log("kello?");
-      }
-    });
-})(window.app || (window.app = {}));
+System.register(['angular2/core'], function(exports_1) {
+    var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    var __metadata = (this && this.__metadata) || function (k, v) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+    };
+    var core_1;
+    var AppComponent;
+    return {
+        setters:[
+            function (core_1_1) {
+                core_1 = core_1_1;
+            }],
+        execute: function() {
+            AppComponent = (function () {
+                function AppComponent() {
+                }
+                AppComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-app',
+                        templateUrl: 'app/app.component.html',
+                        styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css', '.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css', '.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css']
+                    }), 
+                    __metadata('design:paramtypes', [])
+                ], AppComponent);
+                return AppComponent;
+            })();
+            exports_1("AppComponent", AppComponent);
+            ;
+        }
+    }
+});
+//# sourceMappingURL=app.component.js.map
