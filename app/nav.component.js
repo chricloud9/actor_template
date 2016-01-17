@@ -9,27 +9,26 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var NavBar;
+    var NavComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            NavBar = (function () {
-                function NavBar() {
+            NavComponent = (function () {
+                function NavComponent() {
                 }
-                NavBar = __decorate([
+                NavComponent = __decorate([
                     core_1.Component({
-                        selector: 'navbar',
-                        templateUrl: 'app/nav.component.html',
-                        styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css', '.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css', '.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css']
+                        selector: 'NavComponent',
+                        template: '<h1>at least this works </h1>'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], NavBar);
-                return NavBar;
+                ], NavComponent);
+                return NavComponent;
             })();
-            exports_1("NavBar", NavBar);
+            exports_1("NavComponent", NavComponent);
         }
     }
 });

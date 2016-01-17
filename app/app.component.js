@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1) {
+System.register(['angular2/core', 'angular2/router', './nav.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,29 +8,40 @@ System.register(['angular2/core'], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, router_1, nav_component_1;
     var AppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
+            },
+            function (nav_component_1_1) {
+                nav_component_1 = nav_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.title = 'Charley Morgan';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/app.component.html',
-                        styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css', '.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css', '.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css']
-                    }), 
+                        styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css', '.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css', '.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css'],
+                        directives: [router_1.ROUTER_DIRECTIVES],
+                        providers: [router_1.ROUTER_PROVIDERS]
+                    }),
+                    router_1.RouteConfig([
+                        { path: '/navbar', name: 'NavComponent', component: nav_component_1.NavComponent, useAsDefault: true },
+                    ]), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
                 return AppComponent;
             })();
             exports_1("AppComponent", AppComponent);
-            ;
         }
     }
 });

@@ -1,9 +1,10 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
+import {Router} from 'angular2/router';
+
 @Component({
-  selector: 'navbar',
-  templateUrl:'app/nav.component.html',
-  styleUrls: ['.././Narrow Jumbotron Template for Bootstrap_files/bootstrap.min.css','.././Narrow Jumbotron Template for Bootstrap_files/ie10-viewport-bug-workaround.css','.././Narrow Jumbotron Template for Bootstrap_files/jumbotron-narrow.css']
+  selector: 'NavComponent',
+  template:'<h1>at least this works </h1>'
 })
-export class NavBar {
-  
+export class NavComponent {
+
 }
